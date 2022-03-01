@@ -1,46 +1,35 @@
 package com.example.perludilindungi
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
-import androidx.fragment.app.Fragment
-import androidx.lifecycle.Observer
-import androidx.lifecycle.ViewModelProvider
-import com.example.perludilindungi.fragments.BookmarkFragment
-import com.example.perludilindungi.fragments.LocationFragment
-import com.example.perludilindungi.fragments.NewsFragment
-import com.example.perludilindungi.repository.Repository
+import com.google.android.material.bottomnavigation.BottomNavigationView
+import androidx.appcompat.app.AppCompatActivity
+import androidx.navigation.findNavController
+import androidx.navigation.ui.AppBarConfiguration
+import androidx.navigation.ui.setupActionBarWithNavController
+import androidx.navigation.ui.setupWithNavController
+import com.example.perludilindungi.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
-    private val newsFragment = NewsFragment()
-    private val locationFragment = LocationFragment()
-    private val bookmarkFragment = BookmarkFragment()
 
-    private lateinit var viewModel: MainViewModel
+    private lateinit var binding: ActivityMainBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
 
-        val repository = Repository()
-        val viewModelFactory = MainViewModelFactory(repository)
-        viewModel = ViewModelProvider(this, viewModelFactory).get(MainViewModel::class.java)
-        viewModel.getNews()
-        viewModel.myResponse.observe(this, Observer { response ->
-            Log.d("Response", response.success.toString())
-            Log.d("Response", response.message)
-            Log.d("Response", response.count_total.toString())
-            Log.d("Response", response.results.toString())
-        })
-        replaceFragment(newsFragment)
+        binding = ActivityMainBinding.inflate(layoutInflater)
+        setContentView(binding.root)
 
-    }
+        val navView: BottomNavigationView = binding.navView
 
-    private fun replaceFragment(fragment: Fragment){
-        if(fragment != null){
-            val transaction = supportFragmentManager.beginTransaction()
-            transaction.replace(R.id.fragment_container, fragment)
-            transaction.commit()
-        }
+        val navController = findNavController(R.id.nav_host_fragment_activity_main)
+        // Passing each menu ID as a set of Ids because each
+        // menu should be considered as top level destinations.
+        val appBarConfiguration = AppBarConfiguration(
+            setOf(
+                R.id.navigation_home, R.id.navigation_dashboard, R.id.navigation_notifications
+            )
+        )
+        setupActionBarWithNavController(navController, appBarConfiguration)
+        navView.setupWithNavController(navController)
     }
 }
