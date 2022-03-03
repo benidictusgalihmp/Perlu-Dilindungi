@@ -16,6 +16,20 @@
         android:paddingTop="15dp"
         android:paddingBottom="15dp">
 
+        <TextView
+            android:id="@+id/newsItemUrl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="411dp"
+            android:layout_marginBottom="115dp"
+            android:text="@string/textview"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
         <ImageView
             android:id="@+id/newsEnclosure"
             android:layout_width="100dp"

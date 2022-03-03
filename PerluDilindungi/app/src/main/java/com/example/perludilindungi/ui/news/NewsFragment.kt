@@ -52,7 +52,6 @@ class NewsFragment : Fragment(R.layout.fragment_news){
         newsViewModel.getNews()
         newsViewModel.newsResponse.observe(viewLifecycleOwner, Observer { response ->
             if(response.isSuccessful) {
-//                Log.d("Response", response.body()?..toString())
                 response.body()?.let { newsAdapter.setNewsData(it.results) }
             } else {
                 Toast.makeText(requireActivity(), response.errorBody().toString(), Toast.LENGTH_SHORT).show()
@@ -64,7 +63,8 @@ class NewsFragment : Fragment(R.layout.fragment_news){
 //    override fun onItemClick(news: News) {
 //        val fragment: Fragment = NewsDetailFragment.newInstance(news)
 //        val transaction = requireActivity().supportFragmentManager.beginTransaction()
-//        transaction.hide(requireActivity().supportFragmentManager.findFragmentById(R.id.nav)
+//        transaction.replace(R.id.newsFragment, fragment)
+//        transaction.commit()
 //    }
 
     override fun onDestroyView() {
