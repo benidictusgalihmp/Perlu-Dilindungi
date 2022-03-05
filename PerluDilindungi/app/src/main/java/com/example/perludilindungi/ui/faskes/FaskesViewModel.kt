@@ -2,24 +2,43 @@ package com.example.perludilindungi.ui.faskes
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import androidx.lifecycle.viewModelScope
-import com.example.perludilindungi.model.Province.ProvinceResponse
+import com.example.perludilindungi.model.City.CityData
+import com.example.perludilindungi.model.Faskes.FaskesData
+import com.example.perludilindungi.model.Province.ProvinceData
 import com.example.perludilindungi.repository.Repository
-import kotlinx.coroutines.launch
 
 class FaskesViewModel(private val repository: Repository) : ViewModel() {
-    val provResponse : MutableLiveData<ProvinceResponse?> = MutableLiveData()
+//    val provResponse : MutableLiveData<ProvinceResponse?> = MutableLiveData()
 
-    fun getProvinces() {
-        viewModelScope.launch {
-            val response = repository.getProvince()
-
-            // handling if response null
-            if (response.isSuccessful) {
-                provResponse.value = response.body()
-            } else {
-                provResponse.value = null
-            }
-        }
+    val provinceSelect: MutableLiveData<Int?> by lazy {
+        MutableLiveData<Int?>()
     }
+    val citySelect: MutableLiveData<Int?> by lazy {
+        MutableLiveData<Int?>()
+    }
+
+    val provincesFetch: MutableLiveData<Boolean> by lazy {
+        MutableLiveData<Boolean>()
+    }
+
+    val provinces: MutableLiveData<ArrayList<ProvinceData>?> by lazy {
+        MutableLiveData<ArrayList<ProvinceData>?>()
+    }
+
+    val citiesFetch: MutableLiveData<Boolean> by lazy {
+        MutableLiveData<Boolean>()
+    }
+
+    val cities: MutableLiveData<ArrayList<CityData>?> by lazy {
+        MutableLiveData<ArrayList<CityData>?>()
+    }
+
+    val faskesesFetch: MutableLiveData<Boolean> by lazy {
+        MutableLiveData<Boolean>()
+    }
+
+    val faskeses : MutableLiveData<ArrayList<FaskesData>?> by lazy {
+        MutableLiveData<ArrayList<FaskesData>?>()
+    }
+
 }

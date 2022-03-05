@@ -1,6 +1,5 @@
 package com.example.perludilindungi
 
-import android.widget.Toast
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
@@ -19,5 +18,7 @@ class MainViewModel(private val repository: Repository) : ViewModel() {
             newsResponse.value = response
         }
     }
+
+
 
 }
