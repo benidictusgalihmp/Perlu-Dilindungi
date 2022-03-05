@@ -35,7 +35,7 @@ Sebuah aplikasi mobile pada platform Android bernama Aplikasi Perlu Dilindungi y
 
 ## Screenshot aplikasi
 
-Beberapa screenshot dari aplikasi Perlu Dilindungi ini dapat dilihat di sini.
+Beberapa screenshot dari aplikasi Perlu Dilindungi ini dapat dilihat di [sini](https://gitlab.informatika.org/BenidictusGMP/if3210-2022-android-52/-/tree/main/Screenshots).
 
 ## Pembagian kerja anggota kelompok
 
