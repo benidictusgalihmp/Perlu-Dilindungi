@@ -3,27 +3,24 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Benidictus Galih Mahar Putra/Kuliah/Semester VI/Pengembangan Aplikasi pada Platform Khusus/Tb01_Android/if3210-2022-android-52/PerluDilindungi/app/src/main/res/layout/fragment_detail_faskes.xml" value="0.25" />
-        <entry key="..\:/Benidictus Galih Mahar Putra/Kuliah/Semester VI/Pengembangan Aplikasi pada Platform Khusus/Tb01_Android/if3210-2022-android-52/PerluDilindungi/app/src/main/res/layout/fragment_faskes.xml" value="0.264" />
-        <entry key="..\:/Benidictus Galih Mahar Putra/Kuliah/Semester VI/Pengembangan Aplikasi pada Platform Khusus/Tb01_Android/if3210-2022-android-52/PerluDilindungi/app/src/main/res/layout/fragment_faskes_item.xml" value="0.1" />
+        <entry key="..\:/Users/Pegipegi/Projects/if3210-2022-android-52/PerluDilindungi/app/src/main/res/drawable/ic_add.xml" value="0.239" />
+        <entry key="..\:/Users/Pegipegi/Projects/if3210-2022-android-52/PerluDilindungi/app/src/main/res/layout/activity_main.xml" value="0.2513586956521739" />
+        <entry key="..\:/Users/Pegipegi/Projects/if3210-2022-android-52/PerluDilindungi/app/src/main/res/layout/activity_scan.xml" value="0.3333333333333333" />
+        <entry key="..\:/Users/Pegipegi/Projects/if3210-2022-android-52/PerluDilindungi/app/src/main/res/layout/bookmark_item.xml" value="0.2703804347826087" />
+        <entry key="..\:/Users/Pegipegi/Projects/if3210-2022-android-52/PerluDilindungi/app/src/main/res/layout/fragment_bookmark.xml" value="0.2703804347826087" />
+        <entry key="..\:/Users/Pegipegi/Projects/if3210-2022-android-52/PerluDilindungi/app/src/main/res/layout/fragment_home.xml" value="0.2513586956521739" />
+        <entry key="..\:/Users/Pegipegi/Projects/if3210-2022-android-52/PerluDilindungi/app/src/main/res/layout/fragment_notifications.xml" value="0.2513586956521739" />
+        <entry key="..\:/Users/Pegipegi/Projects/if3210-2022-android-52/PerluDilindungi/app/src/main/res/layout/fragment_notificationsmodif.xml" value="0.2703804347826087" />
+        <entry key="..\:/Users/Pegipegi/Projects/if3210-2022-android-52/PerluDilindungi/app/src/main/res/menu/bottom_nav_menu.xml" value="0.2864583333333333" />
         <entry key="..\:/Users/Windows/AndroidStudioProjects/PerluDilindungi/app/src/main/res/layout/activity_main.xml" value="0.23505434782608695" />
         <entry key="..\:/Users/Windows/AndroidStudioProjects/PerluDilindungi/app/src/main/res/layout/fragment_dashboard.xml" value="0.23505434782608695" />
         <entry key="..\:/Users/Windows/AndroidStudioProjects/PerluDilindungi/app/src/main/res/layout/fragment_home.xml" value="0.23505434782608695" />
         <entry key="..\:/Users/Windows/AndroidStudioProjects/PerluDilindungi/app/src/main/res/layout/fragment_notifications.xml" value="0.23505434782608695" />
         <entry key="..\:/Users/Windows/AndroidStudioProjects/PerluDilindungi/app/src/main/res/menu/bottom_nav_menu.xml" value="0.3333333333333333" />
-        <entry key="..\:/Users/Windows/Desktop/if3210-2022-android-52/PerluDilindungi/app/src/main/res/drawable/ic_dashboard_black_24dp.xml" value="0.27760416666666665" />
-        <entry key="..\:/Users/Windows/Desktop/if3210-2022-android-52/PerluDilindungi/app/src/main/res/drawable/ic_launcher_background.xml" value="0.27760416666666665" />
         <entry key="..\:/Users/Windows/Desktop/if3210-2022-android-52/PerluDilindungi/app/src/main/res/layout/activity_main.xml" value="0.3333333333333333" />
-        <entry key="..\:/Users/Windows/Desktop/if3210-2022-android-52/PerluDilindungi/app/src/main/res/layout/fragment_bookmark.xml" value="0.3333333333333333" />
         <entry key="..\:/Users/Windows/Desktop/if3210-2022-android-52/PerluDilindungi/app/src/main/res/layout/fragment_dashboard.xml" value="0.3333333333333333" />
-        <entry key="..\:/Users/Windows/Desktop/if3210-2022-android-52/PerluDilindungi/app/src/main/res/layout/fragment_faskes.xml" value="0.3333333333333333" />
         <entry key="..\:/Users/Windows/Desktop/if3210-2022-android-52/PerluDilindungi/app/src/main/res/layout/fragment_home.xml" value="0.3333333333333333" />
-        <entry key="..\:/Users/Windows/Desktop/if3210-2022-android-52/PerluDilindungi/app/src/main/res/layout/fragment_location.xml" value="0.3333333333333333" />
-        <entry key="..\:/Users/Windows/Desktop/if3210-2022-android-52/PerluDilindungi/app/src/main/res/layout/fragment_news.xml" value="0.3333333333333333" />
-        <entry key="..\:/Users/Windows/Desktop/if3210-2022-android-52/PerluDilindungi/app/src/main/res/layout/fragment_news_detail.xml" value="0.3078125" />
         <entry key="..\:/Users/Windows/Desktop/if3210-2022-android-52/PerluDilindungi/app/src/main/res/layout/fragment_notifications.xml" value="0.3333333333333333" />
-        <entry key="..\:/Users/Windows/Desktop/if3210-2022-android-52/PerluDilindungi/app/src/main/res/layout/news_card_layout.xml" value="0.33" />
-        <entry key="..\:/Users/Windows/Desktop/if3210-2022-android-52/PerluDilindungi/app/src/main/res/menu/bottom_nav_menu.xml" value="0.3333333333333333" />
       </map>
     </option>
   </component>
@@ -32,12 +29,5 @@
   </component>
   <component name="ProjectType">
     <option name="id" value="Android" />
-  </component>
-  <component name="VisualizationToolProject">
-    <option name="state">
-      <ProjectState>
-        <option name="scale" value="0.3333333333333333" />
-      </ProjectState>
-    </option>
   </component>
 </project>
