@@ -2,7 +2,12 @@ package com.example.perludilindungi
 
 import android.Manifest
 import android.annotation.SuppressLint
+import android.content.Context
 import android.content.pm.PackageManager
+import android.hardware.Sensor
+import android.hardware.SensorEvent
+import android.hardware.SensorEventListener
+import android.hardware.SensorManager
 import android.location.Location
 import android.os.Bundle
 import android.os.HandlerThread
@@ -23,10 +28,11 @@ import com.example.perludilindungi.model.ScanPostBody
 import com.example.perludilindungi.repository.Repository
 import com.google.android.gms.location.*
 import kotlinx.android.synthetic.main.activity_scan.*
+import org.w3c.dom.Text
 
 private const val CAMERA_REQUEST_CODE = 101
 
-class ScanActivity : AppCompatActivity() {
+class ScanActivity : AppCompatActivity(), SensorEventListener {
 
     private lateinit var codeScanner: CodeScanner
     private lateinit var viewModel: MainViewModel
@@ -36,10 +42,16 @@ class ScanActivity : AppCompatActivity() {
     private lateinit var locationRequest: LocationRequest
     private lateinit var locationCallback: LocationCallback
 
+    private lateinit var sensorManager: SensorManager
+    private var temperature: Sensor? = null
+
     @SuppressLint("MissingPermission")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_scan)
+
+        sensorManager = getSystemService(SENSOR_SERVICE) as SensorManager
+        temperature = sensorManager.getDefaultSensor(Sensor.TYPE_AMBIENT_TEMPERATURE)
 
         fusedLocationProviderClient = LocationServices.getFusedLocationProviderClient(this)
         location = Location("")
@@ -47,6 +59,14 @@ class ScanActivity : AppCompatActivity() {
 
         setupPermissions()
         codeScanner()
+    }
+
+    override fun onSensorChanged(p0: SensorEvent?) {
+        tvTemperature.setText("${p0!!.values[0]}℃")
+    }
+
+    override fun onAccuracyChanged(p0: Sensor?, p1: Int) {
+
     }
 
     private fun getLocationUpdates() {
@@ -163,12 +183,14 @@ class ScanActivity : AppCompatActivity() {
 
     override fun onResume() {
         super.onResume()
+        sensorManager.registerListener(this, temperature, SensorManager.SENSOR_DELAY_NORMAL)
         codeScanner.startPreview()
         startLocationUpdates()
     }
 
     override fun onPause() {
         super.onPause()
+        sensorManager.unregisterListener(this)
         codeScanner.releaseResources()
         stopLocationUpdates()
     }
