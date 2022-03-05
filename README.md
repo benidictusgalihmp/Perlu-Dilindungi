@@ -17,7 +17,13 @@ Sebuah aplikasi mobile pada platform Android bernama Aplikasi Perlu Dilindungi y
    Fitur tampilan daftar berita COVID-19 ini merupakan salah satu halaman dari aplikasi yang diimplementasi menggunakan RecyclerView yang masing-masing item berisi layout CardView, sedangkan untuk tampilan detail berita diimplementasi menggunakan WebView.
 
 2. Menampilkan Daftar Faskes untuk Vaksinasi
+
+   Fitur daftar faskes digunakan untuk menampilkan informasi faskes berdasarkan provinsi dan kota. List yang ditampilkan menggunakan ListView dengan item setiap faskes menggunakan layout itemListView. 
+
 3. Menampilkan Detail Informasi Faskes
+
+   Fitur detail informasi Faskes digunakan untuk menampilkan detail informasi dari faskes. Dibuat sebuah adapter untuk mengubah setiap nilai berdasarkan position dari itemOnClick.
+
 4. Menampilkan Daftar Bookmark Faskes
 
    Fitur ini digunakan untuk melihat Faskes yang di-bookmark oleh pengguna. Daftar dari Faskes yang di-bookmark tersimpan dalam database SQLite menggunakan library room pada android.
