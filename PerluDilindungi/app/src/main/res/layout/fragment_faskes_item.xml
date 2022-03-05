@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.faskes.FaskesItemFragment">
+
+    <TextView
+        android:id="@+id/nomorFaskes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:text="Faskes Nomor 1"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+    <TextView
+        android:id="@+id/tipeItemFaskes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:textSize="12sp"
+        android:paddingHorizontal="12dp"
+        android:paddingVertical="2dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="PUSKESMAS"/>
+
+    <TextView
+        android:id="@+id/alamatItemFaskes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:textSize="12sp"
+        app:layout_constraintTop_toBottomOf="@+id/nomorFaskes"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginHorizontal="20dp"
+        android:text="Alamat"/>
+
+    <TextView
+        android:id="@+id/noTelpItemFaskes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="20dp"
+        android:textSize="12sp"
+        app:layout_constraintTop_toBottomOf="@+id/alamatItemFaskes"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="(021) 0888888"/>
+
+    <TextView
+        android:id="@+id/kodeItemFaskes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/alamatItemFaskes"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="20dp"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="1000000"/>
+
+    <TextView
+        android:id="@+id/textKodeFaskes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="5sp"
+        app:layout_constraintEnd_toStartOf="@id/kodeItemFaskes"
+        android:textSize="12sp"
+        app:layout_constraintTop_toBottomOf="@+id/alamatItemFaskes"
+        android:text="Kode: "/>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
