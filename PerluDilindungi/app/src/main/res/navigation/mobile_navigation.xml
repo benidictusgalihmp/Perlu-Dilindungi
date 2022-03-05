@@ -8,18 +8,15 @@
     <fragment
         android:id="@+id/navigation_home"
         android:name="com.example.perludilindungi.ui.news.NewsFragment"
-        android:label="@string/title_home"
         tools:layout="@layout/fragment_news" />
 
     <fragment
         android:id="@+id/navigation_dashboard"
         android:name="com.example.perludilindungi.ui.faskes.FaskesFragment"
-        android:label="@string/title_dashboard"
         tools:layout="@layout/fragment_faskes" />
 
     <fragment
         android:id="@+id/navigation_notifications"
         android:name="com.example.perludilindungi.ui.bookmark.BookmarkFragment"
-        android:label="@string/title_notifications"
         tools:layout="@layout/fragment_bookmark" />
 </navigation>
