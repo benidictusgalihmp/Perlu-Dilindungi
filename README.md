@@ -10,12 +10,15 @@ Sebuah aplikasi mobile pada platform Android bernama Aplikasi Perlu Dilindungi y
 
 ## Cara kerja
 1. Menampilkan Berita COVID-19
-Fitur tampilan daftar berita COVID-19 ini merupakan salah satu halaman dari aplikasi yang diimplementasi menggunakan RecyclerView yang masing-masing item berisi layout CardView, sedangkan untuk tampilan detail berita diimplementasi menggunakan WebView.
+
+    Fitur tampilan daftar berita COVID-19 ini merupakan salah satu halaman dari aplikasi yang diimplementasi menggunakan RecyclerView yang      masing-masing item berisi layout CardView, sedangkan untuk tampilan detail berita diimplementasi menggunakan WebView.
+
 2. Menampilkan Daftar Faskes untuk Vaksinasi
 3. Menampilkan Detail Informasi Faskes
 4. Menampilkan Daftar Bookmark Faskes
 5. Melakukan "Check-in"
-Fitur ini dapat diakses dengan menekan FloatingActionButton yang berada pada tampilan utama dan akan membuka kamera serta mengakses lokasi device, fitur dapat membaca hasil scan QR-Code melalui kamera yang kemudian mengembalikan status pengguna beserta alasannya.
+
+    Fitur ini dapat diakses dengan menekan FloatingActionButton yang berada pada tampilan utama dan akan membuka kamera serta mengakses lokasi device, fitur dapat membaca hasil scan QR-Code melalui kamera yang kemudian mengembalikan status pengguna beserta alasannya.
 
 ## Library yang digunakan
 - Retrofit (https://square.github.io/retrofit/) : Library ini digunakan untuk berinteraksi dengan API dan mengirim API requests
